@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#302929"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageIntro"
+        android:layout_width="200dp"
+        android:layout_height="312dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pageone" />
+
+    <TextView
+        android:id="@+id/ds_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ds_second"
+        android:layout_toStartOf="@+id/ds_second"
+        android:text="D"
+        android:textSize="50dp"
+        android:textColor="#1447C8"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/ds_second" />
+
+    <TextView
+        android:id="@+id/ds_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="115dp"
+        android:layout_marginEnd="145dp"
+        android:text="S"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="145dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="1sp"
+        android:layout_marginRight="1dp"
+        android:fontFamily="cursive"
+        android:text="Turning ordinary people to extra-ordinary millionaires " />
+
+</RelativeLayout>
