@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "705997001515",
+    "firebase_url": "https://alascoapp.firebaseio.com",
+    "project_id": "alascoapp",
+    "storage_bucket": "alascoapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705997001515:android:4a3ac9a2d94523dd",
+        "android_client_info": {
+          "package_name": "com.example.ayo.dsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705997001515-rvsld6i4r4ildvhaffjftc24lmobdt4a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ayo.dsapp",
+            "certificate_hash": "dceacbb8efd15b2149ce9a7302be79b3ffec7aff"
+          }
+        },
+        {
+          "client_id": "705997001515-l0dnhq1l7j1pt3chtj07kr74laontcc0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAbVMrVrw1sClIwZ0-Ky8MgYGAZEIbyB0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705997001515-l0dnhq1l7j1pt3chtj07kr74laontcc0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

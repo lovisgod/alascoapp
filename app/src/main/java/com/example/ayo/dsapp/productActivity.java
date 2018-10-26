@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.Image;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.support.v4.view.ViewPager;
@@ -24,6 +25,7 @@ public class productActivity extends AppCompatActivity {
     int page = 1;
     ViewPager viewPager;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +40,7 @@ public class productActivity extends AppCompatActivity {
 
 
         ImageView logo= (ImageView)findViewById(R.id.logo);
-        Button gotomain = (Button)findViewById(R.id.tools);
+        FloatingActionButton gotomain = (FloatingActionButton) findViewById(R.id.cont);
 
         Bitmap bitmaplogo = BitmapFactory.decodeResource(getResources(), R.drawable.pageone);
         RoundedBitmapDrawable oneDrawable = RoundedBitmapDrawableFactory.create(getResources(), bitmaplogo);
@@ -46,6 +48,7 @@ public class productActivity extends AppCompatActivity {
 
 
         logo.setImageDrawable(oneDrawable);
+
 
         gotomain.setOnClickListener(new View.OnClickListener() {
             @Override

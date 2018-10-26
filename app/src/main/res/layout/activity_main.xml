@@ -54,9 +54,9 @@
         android:textAllCaps="false"
         android:textStyle="bold"
         android:textSize="18dp"
-        android:layout_marginLeft="1sp"
-        android:layout_marginRight="1dp"
-        android:fontFamily="cursive"
-        android:text="Turning ordinary people to extra-ordinary millionaires " />
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="serif-monospace"
+        android:text=" Turning ordinary people to\n extra-ordinary millionaires " />
 
 </RelativeLayout>
