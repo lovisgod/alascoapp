@@ -34,13 +34,15 @@
             android:name=".accountActivity"
             android:label="ACCOUNT LINKING"
             android:parentActivityName=".landingActivity" />
-        <activity android:name=".webPageActivity" />
+        <activity android:name=".webPageActivity"
+            android:parentActivityName=".landingActivity"/>
         <activity
             android:name=".testimonialsActivity"
             android:label="TESTIMONY"
             android:parentActivityName=".landingActivity"
             android:theme="@style/myTheme" />
-        <activity android:name=".addCommentActivity"></activity>
+        <activity android:name=".addCommentActivity"
+            android:parentActivityName=".testimonialsActivity"></activity>
     </application>
 
 </manifest>

@@ -123,6 +123,7 @@ public class addCommentActivity extends AppCompatActivity {
             Intent intent = new Intent(addCommentActivity.this, testimonialsActivity.class);
             startActivity(intent);
             Toast.makeText(this,"comment added",Toast.LENGTH_SHORT).show();
+            finish();
 
 
             if(imageUri !=null){

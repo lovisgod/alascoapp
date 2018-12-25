@@ -1,5 +1,6 @@
 package com.example.ayo.dsapp;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -19,11 +20,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class testimonialsActivity extends AppCompatActivity {
 
     FloatingActionButton button;
     RecyclerView comments;
     DatabaseReference ref;
+    ProgressDialog progress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,8 +47,21 @@ public class testimonialsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(testimonialsActivity.this, addCommentActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
+        progress=new ProgressDialog(this);
+        progress.setMessage("Downloading Testimonials! please make sure your internet connection is up");
+        progress.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        progress.setIndeterminate(true);
+        progress.setProgress(0);
+        progress.show();
+
+        new Timer().schedule(new TimerTask() {
+            public void run() {
+                progress.dismiss();
+            }
+        }, 7000);
     }
 
     @Override

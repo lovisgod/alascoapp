@@ -11,86 +11,83 @@
     <include layout="@layout/toolbar" />
 
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="140dp"
-        app:srcCompat="@drawable/pageone"
-        android:layout_marginTop="10dp"/>
+    <ImageView android:id="@id/logo"
+        android:layout_width="100.0dip"
+        android:layout_height="100.0dip"
+        android:layout_marginLeft="140.0dip"
+        android:layout_marginTop="10.0dip"
+        app:srcCompat="@drawable/pageone" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:orientation="vertical">
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip">
 
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="76dp"
-                android:layout_height="71dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="8dp"
+                android:layout_width="76.0dip"
+                android:layout_height="71.0dip"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="1.0dip"
                 app:srcCompat="@drawable/login" />
-
-
-
-            <Button
-                android:id="@+id/login"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/cornerssecond"
-                android:text="DTC LOGIN"
-                android:textAllCaps="true"
-                android:textSize="25sp"
-                android:textStyle="bold" />
-
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="68dp"
-                android:layout_height="62dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
+                android:layout_width="68.0dip"
+                android:layout_height="62.0dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginTop="40.0dip"
                 app:srcCompat="@drawable/aim_account" />
-
-
-
-            <Button
-                android:id="@+id/account_linking"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/cornerssecond"
-                android:text="ACCOUNT LINKING"
-                android:textAllCaps="true"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="63dp"
-                android:layout_height="63dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="10dp"
+                android:layout_width="63.0dip"
+                android:layout_height="63.0dip"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginTop="40.0dip"
                 app:srcCompat="@drawable/product_six" />
+        </LinearLayout>
 
-            <Button
-                android:id="@+id/testimonials"
-                android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/account_linking"
-                android:layout_marginTop="5dp"
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip">
+
+            <Button android:textSize="25.0sp"
+                android:textStyle="bold"
+                android:id="@+id/login"
                 android:background="@drawable/cornerssecond"
+                android:layout_width="240.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="DTC LOGIN"
+                android:textAllCaps="true" />
+
+            <Button android:textSize="20.0sp"
+                android:textStyle="bold"
+                android:id="@+id/account_linking"
+                android:background="@drawable/cornerssecond"
+                android:layout_width="240.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60.0dip"
+                android:text="ACCOUNT LINKING"
+                android:textAllCaps="true" />
+
+            <Button android:textSize="20.0sp"
+                android:textStyle="bold"
+                android:id="@+id/testimonials"
+                android:background="@drawable/cornerssecond"
+                android:layout_width="240.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60.0dip"
                 android:text="TESTIMONY"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:layout_alignLeft= "@id/account_linking" />
 
 
         </LinearLayout>
-
-
     </LinearLayout>
-
+</LinearLayout>

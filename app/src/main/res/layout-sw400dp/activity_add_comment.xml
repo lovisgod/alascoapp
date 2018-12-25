@@ -15,7 +15,7 @@
         android:layout_width="120dp"
         android:layout_height="70dp"
         android:layout_marginTop="20dp"
-       android:layout_gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
         app:srcCompat="@drawable/user" />
 
     <TextView
@@ -24,18 +24,18 @@
         android:text="NAME"
         android:fontFamily="serif-monospace"
         android:textStyle="bold"
-        android:textSize="20sp"
+        android:textSize="30sp"
         android:textColor="#000000"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_marginTop="20dp"
+       android:layout_gravity="center_horizontal"/>
 
 
     <EditText
         android:id="@+id/name"
         android:layout_width="300dp"
-        android:layout_height="30dp"
+        android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/boxbackground"
         android:gravity="left"/>
 
@@ -45,25 +45,25 @@
         android:text="TESTIMONY"
         android:fontFamily="serif-monospace"
         android:textStyle="bold"
-        android:textSize="20sp"
+        android:textSize="30sp"
         android:textColor="#000000"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"/>
 
 
     <EditText
         android:id="@+id/comment"
         android:layout_width="300dp"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/boxbackground"
         android:gravity="left"/>
 
     <Button
         android:id="@+id/submit"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:layout_gravity="center_horizontal"
         android:text="SUBMIT"
         android:fontFamily="serif-monospace"
@@ -71,7 +71,7 @@
         android:textStyle="bold"
         android:textSize="20sp"
         android:background="@drawable/cornerssecond"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="30dp"/>
 
     <!--<ProgressBar
         android:layout_width="wrap_content"
@@ -87,7 +87,7 @@
         android:layout_gravity="bottom|right"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="40dp"
-        android:layout_marginRight="30dp">
+        android:layout_marginRight="40dp">
 
         <LinearLayout
             android:layout_width="match_parent"

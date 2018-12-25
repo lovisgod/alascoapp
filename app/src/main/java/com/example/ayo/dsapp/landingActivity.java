@@ -63,7 +63,7 @@ public class landingActivity extends AppCompatActivity {
         account_link.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentAccount = new Intent(landingActivity.this, accountActivity.class);
+                Intent intentAccount = new Intent(landingActivity.this, webPageActivity.class);
                 startActivity(intentAccount);
             }
         });

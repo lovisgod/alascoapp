@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#302929"
+    tools:context=".MainActivity">
+
+
+    <ImageView android:id="@id/imageIntro"
+        android:layout_width="200.0dip"
+        android:layout_height="312.0dip"
+        android:src="@drawable/pageone"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@id/ds_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="252dp"
+        android:layout_marginBottom="317dp"
+        android:text="D"
+        android:textColor="#ff1447c8"
+        android:textSize="50.0dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@id/ds_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ds_text"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/ds_text"
+        android:text="S"
+        android:textColor="#ffffffff"
+        android:textSize="50.0dip"
+        android:textStyle="bold" />
+    <TextView android:textSize="30.0dip"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:id="@id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65.0dip"
+        android:text=" Turning ordinary people to\n extra-ordinary millionaires "
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false" />
+</RelativeLayout>

@@ -21,27 +21,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/ds_second"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
         android:layout_toStartOf="@+id/ds_second"
+        android:layout_toLeftOf="@+id/ds_second"
         android:text="D"
-        android:textSize="50dp"
         android:textColor="#1447C8"
-        android:textStyle="bold"
-        android:layout_toLeftOf="@+id/ds_second" />
+        android:textSize="50dp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/ds_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="115dp"
-        android:layout_marginEnd="145dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="156dp"
+        android:layout_marginRight="156dp"
+        android:layout_marginBottom="117dp"
         android:text="S"
         android:textColor="#FFFFFF"
         android:textSize="50dp"
-        android:textStyle="bold"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="145dp" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView3"
