@@ -1,4 +1,4 @@
-package com.example.ayo.dsapp;
+package com.alascoray.ayo.dsapp;
 
 import android.content.Intent;
 import android.graphics.Bitmap;

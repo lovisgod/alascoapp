@@ -1,4 +1,4 @@
-package com.example.ayo.dsapp;
+package com.alascoray.ayo.dsapp;
 
 public class list_itemAdd {
     public String customerId;

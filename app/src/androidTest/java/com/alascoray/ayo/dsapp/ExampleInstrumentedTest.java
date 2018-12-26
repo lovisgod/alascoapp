@@ -1,4 +1,4 @@
-package com.example.ayo.dsapp;
+package com.alascoray.ayo.dsapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

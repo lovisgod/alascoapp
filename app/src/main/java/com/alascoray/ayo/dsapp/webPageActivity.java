@@ -1,4 +1,4 @@
-package com.example.ayo.dsapp;
+package com.alascoray.ayo.dsapp;
 
 import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;

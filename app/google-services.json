@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:705997001515:android:4a3ac9a2d94523dd",
         "android_client_info": {
-          "package_name": "com.example.ayo.dsapp"
+          "package_name": "com.alascoray.ayo.dsapp"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "705997001515-rvsld6i4r4ildvhaffjftc24lmobdt4a.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.ayo.dsapp",
+            "package_name": "com.alascoray.ayo.dsapp",
             "certificate_hash": "dceacbb8efd15b2149ce9a7302be79b3ffec7aff"
           }
         },

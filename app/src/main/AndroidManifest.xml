@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ayo.dsapp">
+    package="com.alascoray.ayo.dsapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-feature android:name="android.hardware.camera"
@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.alascoray.ayo.dsapp.MainActivity"
             android:label="DSAPP"
             android:theme="@style/myTheme">
             <intent-filter>
@@ -25,25 +25,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".productActivity"
+            android:name="com.alascoray.ayo.dsapp.productActivity"
             android:label="OUR PRODUCTS"
             android:theme="@style/myTheme" />
         <activity
-            android:name=".landingActivity"
+            android:name="com.alascoray.ayo.dsapp.landingActivity"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".accountActivity"
+            android:name="com.alascoray.ayo.dsapp.accountActivity"
             android:label="ACCOUNT LINKING"
-            android:parentActivityName=".landingActivity" />
-        <activity android:name=".webPageActivity"
-            android:parentActivityName=".landingActivity"/>
+            android:parentActivityName="com.alascoray.ayo.dsapp.landingActivity" />
+        <activity android:name="com.alascoray.ayo.dsapp.webPageActivity"
+            android:parentActivityName="com.alascoray.ayo.dsapp.landingActivity"/>
         <activity
-            android:name=".testimonialsActivity"
+            android:name="com.alascoray.ayo.dsapp.testimonialsActivity"
             android:label="TESTIMONY"
-            android:parentActivityName=".landingActivity"
+            android:parentActivityName="com.alascoray.ayo.dsapp.landingActivity"
             android:theme="@style/myTheme" />
-        <activity android:name=".addCommentActivity"
-            android:parentActivityName=".testimonialsActivity"></activity>
+        <activity android:name="com.alascoray.ayo.dsapp.addCommentActivity"
+            android:parentActivityName="com.alascoray.ayo.dsapp.testimonialsActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
     </application>
 
 </manifest>

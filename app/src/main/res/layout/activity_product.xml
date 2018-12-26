@@ -32,13 +32,15 @@
     </android.support.v4.view.ViewPager>
 
 
+
+
     <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         android:layout_marginBottom="1dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginRight="30dp">
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="10dp">
 
 
 
@@ -72,6 +74,12 @@
 
     </FrameLayout>
 
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
 
 </LinearLayout>
 

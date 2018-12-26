@@ -1,9 +1,8 @@
-package com.example.ayo.dsapp;
+package com.alascoray.ayo.dsapp;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.media.Image;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
@@ -11,9 +10,11 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toolbar;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -24,6 +25,7 @@ public class productActivity extends AppCompatActivity {
     Timer timer;
     int page = 1;
     ViewPager viewPager;
+    AdView adView;
 
 
     @Override
@@ -57,6 +59,13 @@ public class productActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // Add mobile ads
+        MobileAds.initialize(this, "ca-app-pub-3940256099942544~3347511713");
+        adView = (AdView) findViewById(R.id.banner);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+
     }
 
     class RemindTask extends TimerTask {
