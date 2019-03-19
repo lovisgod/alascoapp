@@ -23,9 +23,6 @@ public class landingActivity extends AppCompatActivity {
 
 
         ImageView profile = (ImageView)findViewById(R.id.logo);
-        ImageView imageOne = (ImageView)findViewById(R.id.imageView);
-        ImageView imageTwo = (ImageView)findViewById(R.id.imageView2);
-        ImageView imageThree = (ImageView)findViewById(R.id.imageView3);
         Bitmap bitmapProfile = BitmapFactory.decodeResource(getResources(), R.drawable.pageone);
         Bitmap bitmapImageTwo = BitmapFactory.decodeResource(getResources(),R.drawable.aim_account);
         Bitmap bitmapImageThree = BitmapFactory.decodeResource(getResources(),R.drawable.product_six);
@@ -37,8 +34,6 @@ public class landingActivity extends AppCompatActivity {
         imageThreeDrawable.setCircular(true);
 
         profile.setImageDrawable(mDrawable);
-        imageTwo.setImageDrawable(imageTwoDrawable);
-        imageThree.setImageDrawable(imageThreeDrawable);
 
         Button loginButton = (Button)findViewById(R.id.login);
         Button testimonial = (Button)findViewById(R.id.testimonials);
@@ -69,5 +64,10 @@ public class landingActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    public void openPrivacy(View view) {
+        Intent i = new Intent(this, PrivacyActivity.class);
+        startActivity(i);
     }
 }
